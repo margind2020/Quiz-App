@@ -9,7 +9,7 @@ class Startscreen extends StatelessWidget{
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset("assets/images/quiz_logo.png",
-        width: 250,),
+        width: 250,color: const Color.fromARGB(180, 255, 255, 255),),
         const SizedBox(height: 50,),
         const Text("Learn Flutter the fun way",
         style: TextStyle(color: Colors.white,
