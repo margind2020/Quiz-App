@@ -12,7 +12,11 @@ class quiz extends StatefulWidget{
 }
 
 class _quizstate extends State<quiz>{
-  Widget activescreen=Startscreen();
+  Widget? activescreen;
+  initState(){
+    super.initState();
+    activescreen=Startscreen(switchscreen);
+  }
   void switchscreen(){
     setState(() {
       activescreen=question_screen();
